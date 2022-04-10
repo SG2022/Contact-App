@@ -1,0 +1,37 @@
+hibernate:
+  show_sql: true
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: sa
+    url: jdbc:h2:mem:testdb
+    username: sa
+    
+jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+   
+  
+      
+app:
+  messages:
+    contactSaveSucc: Contact Saved
+    contactSavefail: Failed to save contact
+    contactDelSucc: Contact Deleted
+    contactDelFail: Failed to delete contact
+    
+   
+     
+    
