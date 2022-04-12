@@ -57,7 +57,7 @@ public class ContactRestController {
 	
 	
 	
-	
+	/* comment */
 	@DeleteMapping("/contact/{cid}")
 	public String deleteContact(@PathVariable("cid") Integer contactId)
 	
